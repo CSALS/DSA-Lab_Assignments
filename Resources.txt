@@ -5,7 +5,7 @@ https://www.geeksforgeeks.org/strongly-connected-components/
 https://codeforces.com/problemset/problem/427/C?locale=en
 https://codeforces.com/blog/entry/52410
 https://www.geeksforgeeks.org/counting-inversions/
-
+https://www.geeksforgeeks.org/check-if-a-given-graph-is-bipartite-using-dfs/
 https://stackoverflow.com/questions/4142745/initialize-a-string-in-c-to-empty-string
 https://stackoverflow.com/questions/46860908/concatenate-two-strings-with-a-common-substring
 https://www.geeksforgeeks.org/check-string-substring-another/
