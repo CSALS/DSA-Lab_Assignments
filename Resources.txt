@@ -12,9 +12,10 @@ https://www.geeksforgeeks.org/check-string-substring-another/
 https://www.geeksforgeeks.org/print-all-combinations-of-given-length/
 https://www.geeksforgeeks.org/program-count-digits-integer-3-different-methods/
 https://www.geeksforgeeks.org/check-characters-given-string-can-rearranged-form-palindrome/
-
 https://www.geeksforgeeks.org/print-all-possible-combinations-of-r-elements-in-a-given-array-of-size-n/
 https://www.youtube.com/watch?v=wVNV3JEcikA
 https://www.geeksforgeeks.org/finding-all-subsets-of-a-given-set-in-java/
 https://hackernoon.com/xor-the-magical-bit-wise-operator-24d3012ed821
 https://www.geeksforgeeks.org/find-the-element-that-odd-number-of-times-in-olog-n-time/
+https://www.geeksforgeeks.org/minimum-sum-two-numbers-formed-digits-array/
+https://www.geeksforgeeks.org/comparator-function-of-qsort-in-c/
