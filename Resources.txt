@@ -19,3 +19,4 @@ https://hackernoon.com/xor-the-magical-bit-wise-operator-24d3012ed821
 https://www.geeksforgeeks.org/find-the-element-that-odd-number-of-times-in-olog-n-time/
 https://www.geeksforgeeks.org/minimum-sum-two-numbers-formed-digits-array/
 https://www.geeksforgeeks.org/comparator-function-of-qsort-in-c/
+https://www.geeksforgeeks.org/int_max-int_min-cc-applications/
