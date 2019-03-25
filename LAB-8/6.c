@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define INT_MAX 100000
+#define INT_MAX 1e7
 
 int arr[INT_MAX];
 int end=-1;
-int min=100000;
+int min_arr[INT_MAX];
 
 void push(int data) {
 	if(end==INT_MAX-1) {
@@ -12,7 +12,7 @@ void push(int data) {
 	}
 	else {
 		arr[++end] = data;
-		if(data<min) min = data;		
+				
 	}
 }
 int pop() {
@@ -23,7 +23,7 @@ int empty() {
 	return 1;
 }
 int minimum() {
-	return min;
+	
 }
 int main() {
 	#ifndef ONLINE_JUDGE
