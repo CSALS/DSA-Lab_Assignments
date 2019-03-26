@@ -1,41 +1,53 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define INT_MAX 1e7
-
-int arr[INT_MAX];
-int end=-1;
-int min_arr[INT_MAX];
-
+#define INT_MAX 10000
+//This approach uses extra stack for minimum
+int stack[INT_MAX];
+int topStack=-1;
+int minStack[INT_MAX];
+int topMinStack=-1;
+/* ith elemenet in minStack is the minimum element of first 'i' elements of
+ original stack */
 void push(int data) {
-	if(end==INT_MAX-1) {
+	if(topStack==INT_MAX-1) {
 		printf("Stack Overflow");
 	}
 	else {
-		arr[++end] = data;
-				
+		stack[++topStack] = data;
+		if(topMinStack==-1) {
+			minStack[++topMinStack] = data;
+		}
+		else {
+			if(data < minStack[topMinStack])
+				minStack[topMinStack+1] = data;
+			else
+				minStack[topMinStack+1] = minStack[topMinStack];
+				topMinStack++;
+		}
 	}
 }
 int pop() {
-	return arr[end--];
+	topMinStack--;
+	return stack[topStack--];
 }
 int empty() {
-	if(end==-1) return 0; //empty
+	if(topStack==-1) return 0; //empty
 	return 1;
 }
 int minimum() {
-	
+	return minStack[topMinStack];
 }
 int main() {
-	#ifndef ONLINE_JUDGE
+	/*#ifndef ONLINE_JUDGE
 	//for getting input from input.txt
 	freopen("input.txt","r",stdin);
 	//for writing output to output.txt
 	freopen("output.txt","w",stdout);
-	#endif
+	#endif*/
 
 	int flag=1;
 	while(flag==1) {
-	printf("Press 1 for pushing an element \n Press 2 for popping the top element \n Press 3 for retrieving the minimum element \n Press 4 for exiting");
+	printf("Press 1 for pushing an element \n Press 2 for popping the top element \n Press 3 for retrieving the minimum element \n Press 4 for exiting \n");
 	int input; scanf("%d",&input);
 		switch(input) {
 			case 4:
