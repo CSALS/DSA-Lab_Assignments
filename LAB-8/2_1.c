@@ -22,6 +22,9 @@ void computePermutation(int arr[],int start,int end,int a[],int b[],int n) {
 		}
 		minWaitingTime = min(minWaitingTime,totalWaitingTime);
 		return;
+		/*for(int i=0;i<n;i++)
+			printf("%d ",arr[i]); nl;*/
+		return;
 	}
 	int i;
 	for(i=start;i<=end;i++) {
@@ -44,7 +47,7 @@ int main() {
 		arr[i]=i;
 	}
 	computePermutation(arr,0,n-1,a,b,n);
-	printf("%lf",(double)(minWaitingTime/n));
+	printf("%lf",((double)(minWaitingTime))/n);
     return 0;	
 }
 
